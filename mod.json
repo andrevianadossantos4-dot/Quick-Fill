@@ -1,8 +1,8 @@
 {
-	"geode": "4.2.0",
+	"geode": "5.11.1",
 	"gd": {
 		"win": "2.2074",
-		"android": "2.2074",
+		"android": "2.2081",
 		"mac": "2.2074"
 	},
 	"id": "nwo5.quick_fill",
