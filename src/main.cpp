@@ -43,7 +43,7 @@ class $modify(EditUI, EditorUI) {
 
             int id = (Mod::get()->getSettingValue<bool>("use-obj-2") ? obj2 : obj1)->m_objectID;
             auto editorLayer = LevelEditorLayer::get();
-            CCArray objs;
+            auto objs = CCArray::create();
             
             for (const auto& point : points) {
                 auto obj = editorLayer->createObject(id, point, false);
@@ -71,7 +71,7 @@ class $modify(EditUI, EditorUI) {
                     }
                 }
                 
-                objs.addObject(obj);
+                objs->addObject(obj);
             }     
             
             this->deselectAll();
